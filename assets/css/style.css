@@ -2,6 +2,8 @@
     --primaryColour: #2e3047;
     --secondaryColour: #272640;
     --textColour: #3bba9c;
+    --highlightColor: #2b0e2b31;
+    --highlightColor2: #4D194D;
 }
 
 html,
@@ -20,7 +22,9 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+.customNav,
+.card-title {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: normal;
   color: var(--textColour);
@@ -34,6 +38,7 @@ h2 {
 
 a {
     text-decoration: none;
+    transition: all 0.35s;
 }
 
 section {
@@ -51,9 +56,10 @@ section h2 {
 /*Nav*/
 
 .customNav {
+    position: absolute;
     width: 100%;
     z-index: 10;
-    background-color: transparent;
+    --bs-bg-opacity: 0 !important;
 }
 
 .navbar-nav {
@@ -63,6 +69,20 @@ section h2 {
 
 .navbar-brand {
     padding-left: 8px;
+    font-weight: bold;
+    color: var(--textColour);
+    --bs-navbar-brand-hover-color: var(--highlightColor2);
+}
+
+.nav-link {
+    color: var(--textColour);
+    --bs-nav-link-hover-color: var(--highlightColor2);
+}
+
+.navbar-toggler {
+    color: var(--textColour);
+    --bs-navbar-toggler-border-color: var(--textColour);
+    background: var(--textColour);
 }
 
 /*Hero*/
@@ -74,7 +94,7 @@ section h2 {
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
-    box-shadow: inset 0 0 0 2000px #2726407e;
+    box-shadow: inset 0 0 0 2000px #272640c0;
     justify-content: center;
     text-align: center;
 }
@@ -94,9 +114,15 @@ section h2 {
     justify-content: center;
 }
 
-.projects .card {
-    display: flex;
-    border-radius: 0;
+.projects img {
+    height: 250px;
+    object-fit: cover;
+}
+
+#project:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 2000px var(--highlightColor);
+    transition: all 0.35s;
 }
 
 /*Skills*/
@@ -118,6 +144,29 @@ section h2 {
     justify-content: center;
 }
 
+.details .card {
+    height: 220px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socialIcons a {
+    padding: 25px;
+    border-radius: 100%;
+    background-color: var(--primaryColour);
+}
+
+.socialIcons a:hover {
+    box-shadow: inset 0 0 0 2000px var(--highlightColor);
+}
+
+i {
+    color: var(--textColour);
+}
+
 /*Footer*/
 
 footer {
@@ -128,4 +177,5 @@ footer {
 footer .container {
     display: flex;
     justify-content: center;
+    padding: 15px;
 }
