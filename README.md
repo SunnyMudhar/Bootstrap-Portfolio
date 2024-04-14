@@ -5,7 +5,7 @@ The following is a small Bootstrap Web Portfolio to showcase completed projects
 
 ## Project Description
 
-The aim of this project is to recreate the original HTML and CSS [portfolio](https://github.com/sunielmudhar/UBHM-Portfolio) using the CSS Bootstrap framework. Using [Bootstrap](https://getbootstrap.com/), the layout of the site can be split equally into 12 columns to contain the websites assets. Using these columns, assets can be resized and distributed across the webpage and responsively displayed across a variety of screen sizes, ranging from desktops to small smart phone screens. Upon resizing the webpage to a smaller window, certain assets will be removed from their containing row and stacked ontop of other assets from the same category, displaying content in a mobile friendly layout.
+The aim of this project is to recreate the original HTML and CSS [portfolio](https://github.com/sunnymudhar/UBHM-Portfolio) using the CSS Bootstrap framework. Using [Bootstrap](https://getbootstrap.com/), the layout of the site can be split equally into 12 columns to contain the websites assets. Using these columns, assets can be resized and distributed across the webpage and responsively displayed across a variety of screen sizes, ranging from desktops to small smart phone screens. Upon resizing the webpage to a smaller window, certain assets will be removed from their containing row and stacked ontop of other assets from the same category, displaying content in a mobile friendly layout.
 
 Although awaiting the addition of future works, this portfolio will highlight my best works recently produced, complete with deployed applications and their links. Early iterations of this portfolio will contain placeholder projects, however these placeholders will be updated as more projects are completed and deployed.
 
@@ -40,7 +40,7 @@ Designed primarily for a desktop experience, the site can be accessed on small s
 
 ### GitHub Pages:
 
-[GitHub Pages](https://sunielmudhar.github.io/Bootstrap-Portfolio/)
+[GitHub Pages](https://sunnymudhar.github.io/Bootstrap-Portfolio/)
 
 ## Credits
 The following resources were used in order to help complete this refactoring task:
